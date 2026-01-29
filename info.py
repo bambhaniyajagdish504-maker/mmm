@@ -113,12 +113,8 @@ SHORTENER_WEBSITE = environ.get("SHORTENER_WEBSITE", "vplink.in") # Shortener we
 SHORTENER_API2 = environ.get("SHORTENER_API2", "b6c5b33d5d936b482cea6aed50e073d3139e6ef3")  # Shortener API key for second website
 SHORTENER_WEBSITE2 = environ.get("SHORTENER_WEBSITE2", "teraboxlinks.com") # Shortener website for second website
 
-SHORTENER_API3 = environ.get("SHORTENER_API3", "02046f5daddcb01dce0f29d85aa08fa3334421e8")  
-SHORTENER_WEBSITE3 = environ.get("SHORTENER_WEBSITE3", "vplink.in") # Shortener website for third website
-
-TWO_VERIFY_GAP = int(environ.get('TWO_VERIFY_GAP', "300")) # Time gap for two-step verification in seconds (default: 20 minutes)
-THREE_VERIFY_GAP = int(environ.get('THREE_VERIFY_GAP', "86400"))    
-
+TWO_VERIFY_GAP = int(environ.get('TWO_VERIFY_GAP', "86400")) # Time gap for two-step verification in seconds (default: 20 minutes)
+   
 # ============================
 # Channel & Group Links Configuration
 # ============================
@@ -158,7 +154,7 @@ LONG_IMDB_DESCRIPTION = is_enabled(environ.get("LONG_IMDB_DESCRIPTION", "False")
 SPELL_CHECK_REPLY = is_enabled(environ.get("SPELL_CHECK_REPLY", "True"), True) # Spell Check Mode On (True) / Off (False)
 MELCOW_NEW_USERS = is_enabled((environ.get('MELCOW_NEW_USERS', "False")), False) # Melcow New Users On (True) / Off (False)
 PROTECT_CONTENT = is_enabled((environ.get('PROTECT_CONTENT', "False")), False) # Protect Content On (True) / Off (False)
-PM_SEARCH = bool(environ.get('PM_SEARCH', False))  # PM Search On (True) / Off (False)
+PM_SEARCH = bool(environ.get('PM_SEARCH', True))  # PM Search On (True) / Off (False)
 EMOJI_MODE = bool(environ.get('EMOJI_MODE', False))  # Emoji status On (True) / Off (False)
 BUTTON_MODE = is_enabled((environ.get('BUTTON_MODE', "False")), False) # pm & Group button or link mode (True) / Off (False)
 STREAM_MODE = bool(environ.get('STREAM_MODE', True)) # Set Stream mode True or False

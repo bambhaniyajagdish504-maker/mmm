@@ -306,7 +306,7 @@ async def start(client, message):
                     ],[
                         InlineKeyboardButton(text="⁉️ ʜᴏᴡ ᴛᴏ ᴠᴇʀɪꜰʏ ⁉️", url=howtodownload)
                     ],[
-        InlineKeyboardButton("🤩 BUY PREMIUM 😎", callback_data="premium_info")
+        InlineKeyboardButton("🤩 BUY PREMIUM - NO NEED TO VERIFY 🤩", callback_data="premium_info")
                               ]]
                     
                     reply_markup=InlineKeyboardMarkup(buttons)
